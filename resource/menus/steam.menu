@@ -1,0 +1,24 @@
+"menubar"
+{
+	Steam
+	{
+		text=""
+		
+		ChangeUser						{	text="#steam_menu_changeuser"			command="ChangeUser" }
+		GoOnline						{	text="#SteamUI_OfflineMode_GoOnline"	command="goonline" }
+		GoOffline						{	text="#SteamUI_OfflineMode_GoOffline"	command="gooffline" }
+
+		Divider							{}
+		
+	    // check for updates appears in the system-managed "steam" menu on the mac
+		CheckForUpdates		[!$OSX]		{	text="#steam_menu_checkforupdates"		command="CheckForUpdates" }
+		Divider				[!$OSX]		{}
+
+		BackupGames						{	text="#steam_menu_backupgames"			command="backupgames" }
+
+		Divider				[!$OSX]		{}
+		Settings			[!$OSX]		{	text="#steam_menu_settings"				command="Settings" }
+		Restart 			[!$OSX]		{	text="#Steam_MustRestart_Button"		command="RestartSteam" }
+		Exit				[!$OSX]		{	text="#Steam_ExitSteam"					command="Exit" }
+	}
+}
